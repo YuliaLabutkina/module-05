@@ -119,6 +119,7 @@ div.slider-wrapper-button {
     border: none;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 
 .slider-button-item:focus,
