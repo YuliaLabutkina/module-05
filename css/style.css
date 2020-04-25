@@ -205,6 +205,7 @@ li.products-list-item {
     float: left;
     list-style: none;
     margin-right: 30px;
+    width: 255px;
 }
 
 li.products-list-item:last-of-type {
@@ -356,10 +357,5 @@ footer {
 
 .footer-link {
     text-decoration: none;
-    color: #ffffff;
-}
-
-a.footer-link:hover,
-a.footer-link:focus {
     color: #1abc9c;
 }
