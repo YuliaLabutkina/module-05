@@ -113,14 +113,12 @@ div.slider-wrapper-button {
 .slider-button-item {
     display: block;
     padding: 0;
-    margin: 0 auto;
     width: 104px;
     height: 104px;
     background-color: rgba(78, 198, 171, 0.651);
     border: none;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 1;
 }
 
 .slider-button-item:focus,
@@ -155,8 +153,6 @@ h2.slider-title {
     text-transform: uppercase;
     letter-spacing: -0.02em;
     margin: 0;
-
-
 }
 
 div.slider-wrapper:hover span.slider-title-orange {
@@ -277,34 +273,29 @@ ul.overlay-list {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0;
+    list-style: none;
 }
 
 li.overlay-list-item {
-    list-style: none;
-    width: 166px;
+    float: left;
 }
 
 .overlay-list-button {
-    float: left;
-    display: block;
-    padding: 0;
     border: 1px solid rgb(255, 255, 255);
     cursor: pointer;
     background-color: transparent;
     background-repeat: no-repeat;
-}
-
-.overlay-list-button:not(:last-of-type) {
     width: 50px;
     height: 50px;
     background-position: center;
+    padding: 0;
 }
 
 .overlay-list-button-add {
     background-image: url(../img/icons/add.png);
     width: 166px;
     height: 50px;
-    padding-left: 49px;
+    padding: 0 0 0 49px;
     font-size: 14px;
     line-height: 32px;
     letter-spacing: -0.02em;
@@ -332,11 +323,11 @@ li.overlay-list-item {
     background-color: #1abc9c;
 }
 
-.overlay-list-button:nth-child(-n+2) {
+.overlay-list-item:nth-child(-n + 2) {
     margin-right: 8px;
 }
 
-.overlay-list-button:nth-child(-n+3) {
+.overlay-list-item:nth-child(-n + 3) {
     margin-bottom: 8px;
 }
 
