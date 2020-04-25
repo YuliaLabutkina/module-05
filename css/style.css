@@ -202,7 +202,6 @@ ul.products-list {
 }
 
 li.products-list-item {
-    position: relative;
     float: left;
     list-style: none;
     margin-right: 30px;
@@ -252,20 +251,26 @@ h3.name-prise-title {
     text-transform: uppercase;
 }
 
+div.products-list-img-wrapper {
+    position: relative;
+}
+
 div.overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 255px;
-    height: 282px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.55);
     border: 10px solid rgba(255, 255, 255, 0.55);
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     background-clip: padding-box;
 }
 
 li.products-list-item:hover div.overlay {
-    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 ul.overlay-list {
