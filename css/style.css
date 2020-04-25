@@ -284,6 +284,7 @@ ul.overlay-list {
 
 li.overlay-list-item {
     float: left;
+    font-size: 0;
 }
 
 .overlay-list-button {
